@@ -1,1 +1,19 @@
-/* Acá va tu código */
+html {
+    box-align: center;
+    text-align: center;
+    background-color: palegreen; 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Franklin Gothic Medium', cursive;
+    background-color: aquamarine;
+    padding: 10px;
+}
+textarea {
+    height: 100px;
+    padding: 12px 45px;
+    border-radius: 5px;
+    outline: none;
+
+}
