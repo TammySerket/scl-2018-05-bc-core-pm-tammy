@@ -1,19 +1,26 @@
 html {
-    box-align: center;
     text-align: center;
     background-color: palegreen; 
-    margin: 0;
-    padding: 0;
+    box-sizing: content-box;
 }
 body {
     font-family: 'Franklin Gothic Medium', cursive;
     background-color: aquamarine;
-    padding: 10px;
 }
 textarea {
     height: 100px;
     padding: 12px 45px;
     border-radius: 5px;
     outline: none;
-
+    border: 1px solid black;
+    color: blue;
+    background-color: rgb(248, 246, 132);
+}
+h1 {
+    background-color: blueviolet;
+    text-align: center;
+    box-sizing: content-box;
+}
+#div {
+    box-sizing: content-box;
 }
