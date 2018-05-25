@@ -1,7 +1,7 @@
 html {
     text-align: center;
     background-color: palegreen; 
-    box-sizing: content-box;
+    display: block;
 }
 body {
     font-family: 'Franklin Gothic Medium', cursive;
@@ -17,10 +17,13 @@ textarea {
     background-color: rgb(248, 246, 132);
 }
 h1 {
-    background-color: blueviolet;
+    background-color: rgb(161, 86, 231);
     text-align: center;
     box-sizing: content-box;
 }
 #div {
     box-sizing: content-box;
+}
+p {
+    text-align: center;
 }
