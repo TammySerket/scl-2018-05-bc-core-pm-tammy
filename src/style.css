@@ -6,7 +6,7 @@ html {
 }
 body {
     font-family: 'Franklin Gothic Medium', cursive;
-    background-color: rgb(162, 216, 81);
+    background-color: palegreen;
     display: inline-block;
 }
 textarea {
@@ -20,11 +20,12 @@ textarea {
 }
 h1 {
     font-family: "Lucida Grande" ;
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(211, 109, 157);
     text-align: center;
     box-sizing: border-box;
     display: inline-block;
     font-size: 50px;
+    border: 1px solid black;
 }
 h2 {
     text-align: center;
