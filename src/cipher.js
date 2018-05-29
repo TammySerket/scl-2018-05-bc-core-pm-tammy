@@ -1,6 +1,7 @@
+/* no se utiliza this en cipher*/
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
+  encode: (abcdefghijklmnopqrstuvwxyz) => (abcDario) {
+    /* Acá va tu código (la flecha reemplaza a function)*/
     cipher.encode()
   },
   decode: () => {
@@ -8,3 +9,4 @@ window.cipher = {
     cipher.decode()
   }
 }
+window.cipher.decode(;)
