@@ -1,8 +1,8 @@
 /* no se utiliza this en cipher*/
 window.cipher = {
-  encode: (abcdefghijklmnopqrstuvwxyz) => (abcDario) {
+  encode: ()=> (offset) {
     /* Acá va tu código (la flecha reemplaza a function)*/
-    cipher.encode()
+    cipher.encode(string, offset)
   },
   decode: () => {
     /* Acá va tu código */
