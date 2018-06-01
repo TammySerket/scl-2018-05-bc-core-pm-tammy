@@ -11,7 +11,7 @@ window.cipher =  { /* Acá va tu código (la flecha reemplaza a function)*/
  document.getElementById("cajaResultado").innerHTML = textoCifrar
   }
 
-decode: (mensaje, offset) => {
+  decode: (mensaje, offset) => {
   /* Acá va tu código */
   mensaje = document.getElementById("msjcifrado").value;
   offset = parseInt(document.getElementById('key').value);
