@@ -9,25 +9,24 @@
 <h1>Cifrado César</h1>
 <section>
 <div class="section">
-  <label for="llave">Llave</label>
+  <label for="llave">Elige un numero a modo de Llave</label>
   <input type="number" id="key" min="0" max="5" value="0"><br>
   <label for="txtacifrar">Escribe aquí el texto a cifrar:</label><br>
- <textarea id"msjacifrar" name="message"></textarea>
- <input type="submit"
- value="Enviar" class="submit" />
+ <textarea id"msjacifrar" placeholder="Escribe lo que quieras cifrar aquí" name="message"></textarea>
+ <button onclick="encode()" id="btnCifrar">A Cifrar!</button>
 </div>
 
   <div id="root"></div>
   <div class="section">
 <label for="txtdescifrar">Escribe aquí el texto a descifrar:</label><br>
-    <textarea id "msjcifrado" name="message"></textarea>
-    <input type="submit"
-    value="Enviar" class="submit" />
+    <textarea id "msjcifrado" placeholder="Escribe lo que quieras descifrar aquí" name="message"></textarea>
+    <button onclick="decode()" id="btnDescifrar">A Cifrar!</button>
+
  
  <div>
     <div style="float:right;">
   <label>Resultado:</label><br>
-  <textarea id="Resultado" readonly></textarea></div>
+  <textarea id="Resultado" placeholder="Aquí verás los resultados de ambas funciones" readonly></textarea></div>
 </div>
 
   <script src="app.js"></script>
