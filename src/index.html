@@ -10,26 +10,23 @@
 <section>
 <div class="section">
   <label for="llave">Elige un numero a modo de Llave</label>
-  <input type="number" id="key" min="0" max="33" value="0"/>
+  <input type="number" id="key" min="0" max="5" value="0"/>
   <label for="">Escribe aquí el texto a cifrar:</label><br>
  <textarea id="msjacifrar" placeholder="Escribe lo que quieras cifrar aquí" name="message"></textarea>
- <input type="button" id="btn1" class="button1" onclick="cipher.encode()" value="A Cifrar!"/>
+ <input type="button" id="btn1" class="button1" value="A Cifrar!"/>
 </div>
 
   <div id="root"></div>
   <div class="section">
 <label for="">Escribe aquí el texto a descifrar:</label><br>
-    <textarea id "msjcifrado" placeholder="Escribe lo que quieras descifrar aquí" name="message"></textarea>
-    <input type="button" id="btn2" class="button2" onclick="cipher.decode()" value="A Cifrar!"/>
-
+    <textarea id="msjcifrado" placeholder="Escribe lo que quieras descifrar aquí" name="message"></textarea>
+    <input type="button" id="btn2" class="button2" value="A Descifrar!"/>
+</div>
  
- <div>
     <div style="float:right;">
   <label>Resultado:</label><br>
-  <textarea id="cajaResultado" placeholder="Aquí verás los resultados de ambas funciones" readonly></textarea></div>
-</div>
+  <textarea id="result" placeholder="Aquí verás los resultados de ambas funciones" readonly></textarea></div>
 
-  <script src="app.js"></script>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </section>
