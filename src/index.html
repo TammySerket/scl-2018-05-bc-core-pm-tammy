@@ -13,23 +13,21 @@
   <input type="number" id="key" min="0" max="5" value="0"/>
   <label for="">Escribe aquí el texto a cifrar:</label><br>
  <textarea id="msjacifrar" placeholder="Escribe lo que quieras cifrar aquí" name="message"></textarea>
- <input type="button" id="btn1" class="button1" value="A Cifrar!"/>
+ <button onclick="encode()" id="btn1">A Cifrar!</button>
 </div>
 
-  <div id="root"></div>
   <div class="section">
 <label for="">Escribe aquí el texto a descifrar:</label><br>
     <textarea id="msjcifrado" placeholder="Escribe lo que quieras descifrar aquí" name="message"></textarea>
-    <input type="button" id="btn2" class="button2" value="A Descifrar!"/>
+    <button onclick="decode()" id="btn2">A Descifrar!</button>
 </div>
  
     <div style="float:right;">
   <label>Resultado:</label><br>
   <textarea id="result" placeholder="Aquí verás los resultados de ambas funciones" readonly></textarea></div>
 
+</section>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
-</section>
-
 </body>
 </html>

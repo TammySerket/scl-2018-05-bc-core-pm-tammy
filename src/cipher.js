@@ -27,13 +27,22 @@ offset = parseInt(document.getElementById('key').value);
 window.cipher = {
 
   encode: (mensaje, offset) => {
-   for (let i = 0; i < mensaje.length; ++i) { //busca codigo ASCII y guarda la letra en textoacifrar
+    mensaje = document.getElementById("msjacifrar").innerHTML;
+   for (let i = 0; i < mensaje.length; ++i) { //busca codigo ASCII y guarda la letra en msjacifrar
   let mensaje = (mensaje.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
-  offset = (document.getElementById("key".parseIn()).value); /* Acá va tu código */
+ // offset = (document.getElementById("key".parseIn()).value);
+   /* Acá va tu código */
+
   }},
 
 decode: (mensaje2, offset) => {
+  mensaje2 = document.getElementById("msjcifrado").innerHTML;
   for (let i = 0; i < mensaje2.length; i++) { //busca codigo ASCII y guarda la letra en textodescifrado
     let mensaje2 = (mensaje2.toUpperCase().charCodeAt(i) + 65 - offset) % 26 + 65;
     offset = (document.getElementById("key".parseIn()).value); /* Acá va tu código */
+    //let mensaje2 = () => {
+     // result.value = cipher.decode(msjcifrado.value);
+ // }
   }}}
+
+  

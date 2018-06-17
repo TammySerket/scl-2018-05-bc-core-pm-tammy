@@ -1,8 +1,18 @@
-const botoncirijillo = document.getElementById("btn1");
+function encode() {
+let mensaje = document.getElementById("msjacifrar").value;
+let offset = parseInt(document.getElementById("key").value);
+const answer = window.cipher.encode(mensaje,offset);
+document.getElementById("result").innerHTML = answer;
+const btnEncode = document.getElementById("btn1");{
+    btnEncode.addEventListener("click", ()=>{ 
+      result = document.getElementById("result");
+    })}}
 
-let mensaje = () => {
-    result.value = cipher.encode(msjacifrar.value);
+
+function decode() {
+    let mensaje2 = document.getElementById("msjcifrado").value;
+    let offset = parseInt(document.getElementById("key").value);
+    const answer = window.cipher.decode(mensaje2,offset);
+    document.getElementById("result").innerHTML = answer;
 }
-let mensaje2 = () => {
-    result.value = cipher.decode(msjcifrado.value);
-}
+
