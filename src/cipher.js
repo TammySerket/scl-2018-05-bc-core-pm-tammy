@@ -1,33 +1,31 @@
 window.cipher = {
 
-  encode: (mensaje, offset) => {
-  
-   for (let i = 0; i < mensaje.length; i++) { //busca codigo ASCII y guarda la letra en msjacifrar
-    const cifrar = (mensaje.charCodeAt(i)- 65 + offset) % 26 + 65;
-    answer1 = String.fromCharCode(cifrar);
+  encode: (mensaje, llave) => {
+    let answer1 = ""; //variable para el mensaje guardado al hacer click
+    let offset = parseInt(llave); //se crea variable local de llave con parseint 
+    for (let i = 0; i <= mensaje.length; i++) { //busca codigo ASCII y guarda la letra en msjacifrar
+      let msjacifrar = (mensaje.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;// se crea variable de mensaje para almacenar en numeros
+      let msjcifrado = String.fromCharCode(msjacifrar);// se crea variable que pasa el cifrado de numeros a string
+
+      answer1 += msjcifrado;//se concatena variable vacia con string cifrado
+    }
+    return answer1;//regresa mensaje cifrado
+  },
+
+
+
+  decode: (mensaje2, llave) => {
+    let answer1 = "";//variable para el mensaje guardado al hacer click
+    let offset = parseInt(llave);//se crea variable local de llave con parseint 
+    for (let i = 0; i <= mensaje2.length; i++) { //busca codigo ASCII y guarda la letra en msjacifrar
+      let msjacifrar = (mensaje2.toUpperCase().charCodeAt(i) - 65 - offset) % 26 + 65;// se crea variable de mensaje para almacenar en numeros
+      let msjcifrado = String.fromCharCode(msjacifrar);// se crea variable que pasa el cifrado de numeros a string
+
+      answer1 += msjcifrado;//se concatena variable vacia con string cifrado
+    }
+    return answer1;//regresa mensaje descifrado
   }
-  const btnEncode = document.getElementById("btn1");
-    btnEncode.addEventListener("click", ()=>{      
-      let answer1 = ""; //variable para el mensaje guardado al hacer click
-      answer1 = document.getElementById("msjacifrar").value;
-      let offset = document.getElementById("key").value;
-       document.getElementById("result").innerHTML =  window.cipher.encode(answer1, offset);
-    })
-   
-   },
-   
-  
-
-decode: (mensaje2, offset) => {
-  mensaje2 = document.getElementById("msjcifrado").innerHTML;
-  for (let i = 0; i < mensaje2.length; i++) { //busca codigo ASCII y guarda la letra en textodescifrado
-    let mensaje2 = (mensaje2.toLowerCase().charCodeAt(i) + 65 - offset) % 26 + 65;
-    offset = (document.getElementById("key".parseIn()).value); /* Acá va tu código */
-    //let mensaje2 = () => {
-     // 
- // }
-  }}}
-    
+}
 
 
-  
+

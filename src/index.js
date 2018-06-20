@@ -1,19 +1,18 @@
 function encode() {
-    let mensaje = document.getElementById("msjacifrar").value;
-    let offset = parseInt(document.getElementById("key").value);    
-    const answer = window.cipher.encode(mensaje,offset);   
+    const mensaje = document.getElementById("msjacifrar").value;
+    const llave = document.getElementById("key").value;    
+    const answer = window.cipher.encode(mensaje,llave);   
     document.getElementById("result").innerHTML = answer;
-    
     }
 
 
 function decode() {
-    let mensaje2 = document.getElementById("msjcifrado").value;
-    let offset = parseInt(document.getElementById("key").value);
-    const answer = window.cipher.decode(mensaje2,offset);
+    const mensaje2 = document.getElementById("msjcifrado").value;
+    const llave = parseInt(document.getElementById("key").value);
+    const answer = window.cipher.decode(mensaje2,llave);
     document.getElementById("result").innerHTML = answer;
-    const btnDecode = document.getElementById("btn2");
+  /*  const btnDecode = document.getElementById("btn2");
     btnDecode.addEventListener("click", ()=>{      
-    })
+    })*/
 }
 
