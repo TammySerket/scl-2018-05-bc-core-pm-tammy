@@ -7,6 +7,9 @@
 </head>
 <body>
 <h1>Cifrado César</h1>
+<h3>-En esta pagina puedes realizar mensajes cifrados para tener conversaciones privadas. 
+  -Tienes que poner tu mensaje a cifrar en la primera casilla en minusculas, junto con un numero de llave y recibiras el resultado en la caja de abajo.
+  -En la caja de en medio, pon tu mensaje cifrado con la llave correspondiente y recibiras el resultado abajo.</h3>
 <section>
 <div class="section">
   <label for="llave">Elige un numero a modo de Llave</label>
@@ -22,7 +25,7 @@
     <button onclick="decode()" id="btn2">A Descifrar!</button>
 </div>
  
-    <div style="float:right;">
+    <div id="respuesta">
   <label>Resultado:</label><br>
   <textarea id="result" placeholder="Aquí verás los resultados de ambas funciones" readonly></textarea></div>
 

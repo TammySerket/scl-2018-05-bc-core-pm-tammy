@@ -1,9 +1,8 @@
 ﻿Proyecto Cifrado César
 
 -En esta pagina puedes realizar mensajes cifrados para tener 
-conversaciones privadas.
+conversaciones privadas. Tienes que poner tu mensaje a cifrar en la primera casilla en minusculas y recibiras el resultado en la caja de abajo.
 
-Aun está en modo de prueba, aún no arroja resultados definitivos
 
 
 01/06/2018
